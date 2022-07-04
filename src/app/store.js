@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import quotesReducer from '../features/quotes/quotesSlice';
+import quoteReducer from '../features/quote/quoteSlice';
 
 export const store = configureStore({
     reducer: {
-        quotes: quotesReducer 
-    }
+        quote: quoteReducer,
+    },
 });
