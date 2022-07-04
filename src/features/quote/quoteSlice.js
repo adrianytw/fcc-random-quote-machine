@@ -11,10 +11,12 @@ const initialState = {
 
 export const getQuote = createAsyncThunk(
     'quote/getQuote',
-    async () => {
+    async (dispatch, getState) => {
         try {
+            
             const res = await axios.get(QUOTE_URL + "/random")
             let data = res.data
+
             return {
                 text: data.content,
                 author: data.author
