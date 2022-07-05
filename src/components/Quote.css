@@ -5,6 +5,46 @@
     width: 450px;
     padding: 40px 50px;
     display: table;
-    background-color: gray;
-  }
+    background-color: #71686B;
+}
 
+#text {
+  color: pink;
+}
+#author {
+  padding-left: 80px;
+  font-size: medium;
+  text-align: right;
+  color: aliceblue;
+}
+.bottom-row {
+  border: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.buttons {
+  /* height: 38px; */
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #5B5255;
+  outline: none;
+  font-size: 0.85em;
+  padding: 10px 18px 10px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+/* .sns-button {
+  float: left;
+  padding: 0px;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 5px;
+  width: 40px;
+} */

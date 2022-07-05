@@ -4,11 +4,10 @@ import Quote from './components/Quote';
 
 
 const App = () => {
-  console.log("why run twice")
   
   return (
     <div className="App">
-      <h1>Wandom Qwote Masheen</h1>
+      <h1>Wandom Qwote Masheen 😼</h1>
       <Quote />
     </div>
   );

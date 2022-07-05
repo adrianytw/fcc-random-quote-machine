@@ -11,6 +11,7 @@ const Quote = () => {
     const dispatch = useDispatch();
     const { text, author, isLoading } = useSelector( store => store.quote )
   
+    const tweet = 'https://twitter.com/intent/tweet?text=' + `"${text}"  - ${author}`
     useEffect( () => {
       dispatch(getQuote())
     }, [dispatch]);
@@ -24,12 +25,12 @@ const Quote = () => {
     }
     return (
         <div id="quote-box">
-            <section>
-                <h2 id="text">{text}</h2>
-                <h3 id="author">{author}</h3>
-                <button id="new-quote" onClick={() => dispatch(getQuote())}>fresh qwotie</button>
-                <a id="tweet-quote" href='http://twitter.com/intent/tweet'>tweetah</a>
-            </section>
+            <h2 id="text">{text}</h2>
+            <h3 id="author">- {author}</h3>
+            <div className="bottom-row">
+                <a className="buttons sns-buttons" id="tweet-quote" href={tweet}>🐦</a>
+                <button className="buttons" id="new-quote" onClick={() => dispatch(getQuote())}>🔃 fresh qwotie</button>
+            </div>
         </div>
     )
 }
