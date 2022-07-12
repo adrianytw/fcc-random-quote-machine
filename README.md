@@ -1,5 +1,5 @@
 # Random Quote Machine
-live site at: adrianytw.github.io/fcc-random-quote-machine
+live site at: [fcc-random-quote-machine](https://adrianytw.github.io/fcc-random-quote-machine/)
 
 ## learned
 - redux toolkit
